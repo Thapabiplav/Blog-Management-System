@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = () => {
   return (
+    <>
+    <Link to='blog/id'>
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
   <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVZPfv7ndDfkEuL2mqgLn0X4XRqz0BkZONw&s" alt="Sunset in the mountains" />
   <div class="px-6 py-4">
@@ -16,6 +19,8 @@ const Card = () => {
     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
   </div>
 </div>
+</Link>
+</>
   )
 }
 
